@@ -29,13 +29,13 @@ def enter():
         prev, fibo = fibo, int(prev) + int(fibo)
         print(fibo)
 
-#def Turtle():
-    #bob = turtle.Turtle()
+def Turtle():
+    bob = turtle.Turtle()
 
 #button for turtle
-#butTurtle = ttk.Button(home, text = "Draw!", command = Turtle)
-#butTurtle.grid(row=0, column=2)
-#enter
+butTurtle = ttk.Button(home, text = "Draw!", command = Turtle)
+butTurtle.grid(row=0, column=2)
+
 butEnter = ttk.Button(home, text = "Enter!", command = enter)
 butEnter.grid(row=2, column= 2)
 #numbers
