@@ -1,22 +1,20 @@
 # Description: fibonacci thing
 # Date: 29 / May / 19 BBY
 # By: Daniel Mcinerney
-from tkinter import *
 from tkinter import ttk
 import tkinter as tk
 import turtle
 
-home = Tk()
-#home = tk.Tk()
+home = tk.Tk()
 home.title('Fibonacci drawing Turtle')
 home.geometry("500x400+650+100")
 
 #title
-title = Label(home, text="Fibonacci")
+title = tk.Label(home, text="Fibonacci")
 title.config(font='Helvetica 25 bold')
 title.grid(row=0, column=1)
 #labels
-lblOutputAnswer = Label(home, text = "hello")
+lblOutputAnswer = tk.Label(home, text = "hello")
 lblOutputAnswer.grid(row = 4, columnspan = 2)
 
 #lblOutputAnswer1 = tk.Text(home, text = "hello")
