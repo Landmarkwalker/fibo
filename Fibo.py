@@ -4,7 +4,7 @@
 from tkinter import *
 from tkinter import ttk
 import tkinter as tk
-#import turtle
+import turtle
 
 home = Tk()
 #home = tk.Tk()
