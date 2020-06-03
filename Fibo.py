@@ -18,20 +18,26 @@ title.grid(row=0, column=1)
 #labels
 lblOutputAnswer = Label(home, text = "hello")
 lblOutputAnswer.grid(row = 4, columnspan = 2)
+
 #lblOutputAnswer1 = tk.Text(home, text = "hello")
 #lblOutputAnswer1.pack()
 #func/
 
 def enter():
+    prev = entFib.get()
+    fibo = entFib1.get()
+    for i in range(int(entTimes.get())):
+        prev, fibo = fibo, int(prev) + int(fibo)
+        print(fibo)
+
+def Turtle():
+    bob = turtle.Turtle()
     prev = int(entFib.get())
     fibo = int(entFib1.get())
     for i in range(int(entTimes.get())):
         prev, fibo = fibo, prev + fibo
         bob.fd(prev)
         bob.lt(90)
-
-def Turtle():
-    bob = turtle.Turtle()
 
 #button for turtle
 butTurtle = ttk.Button(home, text = "Draw!", command = Turtle)
