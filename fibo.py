@@ -14,6 +14,10 @@ title = tk.Label(home, text="Fibonacci")
 title.config(font='Helvetica 25 bold')
 title.grid(row=0, column=1)
 
+#labels
+lblOutputAnswer = tk.Label(home, text = "hello")
+lblOutputAnswer.grid(row = 4, columnspan = 2)
+git
 #Text Box - Output
 txtOutput = tk.Text(home, height=10)
 txtOutput.grid(row=6, column=0, columnspan=4)
