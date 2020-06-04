@@ -41,14 +41,14 @@ def Turtle():
 butTurtle = ttk.Button(home, text = "Draw!", command = Turtle)
 butTurtle.grid(row=0, column=2)
 
-butEnter = ttk.Button(home, text = "Enter!", command = enter)
-butEnter.grid(row=2, column= 2)
+butEnter = ttk.Button(home, text="Enter!", command=enter)
+butEnter.grid(row=2, column=2)
 #numbers
-entFib = ttk.Entry(home, width = 20)
-entFib.grid(row = 0, column = 3)
-entFib1 = ttk.Entry(home, width = 20)
-entFib1.grid(row = 2, column = 3)
-entTimes = ttk.Entry(home, width = 20)
-entTimes.grid(row = 3, column = 3)
+entFib = ttk.Entry(home, width=20)
+entFib.grid(row=0, column=3)
+entFib1 = ttk.Entry(home, width=20)
+entFib1.grid(row=2, column=3)
+entTimes = ttk.Entry(home, width=20)
+entTimes.grid(row=3, column=3)
 
 home.mainloop()
