@@ -14,7 +14,7 @@ title = tk.Label(home, text="Fibonacci")
 title.config(font='Helvetica 25 bold')
 title.grid(row=0, column=1)
 
-# Text Box - Output
+#Text Box - Output
 txtOutput = tk.Text(home, height=10)
 txtOutput.grid(row=6, column=0, columnspan=4)
 scrollOutput = ttk.Scrollbar(home, orient=tk.VERTICAL, command=txtOutput.yview)
