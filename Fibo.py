@@ -1,34 +1,32 @@
 # Description: fibonacci thing
 # Date: 29 / May / 19 BBY
 # By: Daniel Mcinerney
-from tkinter import *
 from tkinter import ttk
 import tkinter as tk
 import turtle
 
-home = Tk()
-#home = tk.Tk()
+home = tk.Tk()
 home.title('Fibonacci drawing Turtle')
-home.geometry("500x400+650+100")
+home.geometry("600x400+650+100")
 
 #title
-title = Label(home, text="Fibonacci")
+title = tk.Label(home, text="Fibonacci")
 title.config(font='Helvetica 25 bold')
 title.grid(row=0, column=1)
-#labels
-lblOutputAnswer = Label(home, text = "hello")
-lblOutputAnswer.grid(row = 4, columnspan = 2)
 
-#lblOutputAnswer1 = tk.Text(home, text = "hello")
-#lblOutputAnswer1.pack()
-#func/
+# Text Box - Output
+txtOutput = tk.Text(home, height=10)
+txtOutput.grid(row=6, column=0, columnspan=4)
+scrollOutput = ttk.Scrollbar(home, orient=tk.VERTICAL, command=txtOutput.yview)
+scrollOutput.grid(row=6, column=4, sticky=tk.N+tk.S)
+txtOutput.config(yscrollcommand=scrollOutput.set)
 
 def enter():
     prev = entFib.get()
     fibo = entFib1.get()
     for i in range(int(entTimes.get())):
         prev, fibo = fibo, int(prev) + int(fibo)
-        print(fibo)
+        txtOutput.insert(tk.INSERT, str(fibo) + '\n')
 
 def Turtle():
     bob = turtle.Turtle()
